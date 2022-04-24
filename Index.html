@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Used Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div> 
+  <div id="header">
+  div>
+    <div id="pages">
+      <h2 class="profile">Profile</h2>
+      <ul class="page_list">
+        <li>Home</li>
+        <li>My profile</li>
+        <li>Find Connections</li>
+      </ul>
+    </div>
+
+    <button class="sign_out">Sign Out</button>
+  </div>
+  <div id="container">
+    <div class="left_container">
+      <div id="personal_info">
+        <div class="personal_header">
+          <img src="user-circle.png" alt="user-image">
+        </div>
+        <h2 id="new_name"><em>Jane Doe</em></h2>
+        <div class="map-marker">
+          <img src="map-marker.png" alt="map-marker">
+          <h3>Seattle</h3>
+        </div>
+        <div  class="job">
+          <h3>Devolper | Engineer | Problem Solver</h3>
+          <h3>Master of shadows and Internet!</h3>
+        </div>
+        <div class="edit_profile">
+          <img src="gear.png" alt="gear">
+          <a href="#" onclick="change_name()">edit profile</a>
+        </div>
+      </div>
+      <div id="education">
+        <div class="education_header">
+          <h3 class="title">Education</h3>
+        </div>
+        <div id="education_data">
+          <h3 class="school">Coding Dojo - Full Stack Bootcamp</h3>
+          <p class="date"> Dec 2019 - Mar 2020</p>
+          <p class="education_lang">Triple black belt in python, Mern, and C# ...</p>
+        </div>
+      </div>
+    </div>
+    <div class="right_container">
+      <div id="connection_requests">
+        <div class="request_header">
+          <div class="number">2</div>
+          <h3 class="title">Connection requests</h3>
+        </div>
+        <div class="requester_names">
+          <div class=first_requester>
+            <ul class="requester_name">
+              <li><img src="images/todd-s.jpg" alt="Todd picture"></li>
+              <li>Todd E</li>
+            </ul>
+            <ul class="approval">
+              <li><img src="icons/accept-circle.png" alt="accept" onclick="accept_request('first_requester_accept')"></li>
+              <li><img src="icons/close-circle.png" alt="decline" onclick="decline_request('first_requester_accept')"></li>
+            </ul>
+          </div>
+          <div class=second_requester>
+            <ul class="requester_name">
+                <li><img src="images/phil-s.jpg" alt="Phill picture"></li>
+                <li>Phill K</li>
+            </ul>
+            <ul class="approval">
+              <li><img src="icons/accept-circle.png" alt="accept" onclick="accept_request('second_requester_accept')"></li>
+              <li><img src="icons/close-circle.png" alt="decline" onclick="decline_request('second_requester_accept')"></li>
+            </ul>
+          </div>
+        </div>
+        <div id="your_connections">
+          <div class="connection_header">
+            <div class="number">500+</div>
+            <h3 class="title">Your Connections</h3>
+            </div>
+          <div>
+            <div class="connections_names">
+              <img src="images/adrien-s.jpg" alt="adrien-s picture">
+              <h4>Adrien-s</h4>
+            </div>
+            <div class="connections_names">
+              <img src="images/anne-s.jpg" alt="anne-s picture">
+              <h4>Anne-s</h4>
+            </div>
+            <div class="connections_names">
+              <img src="images/alayne-s.jpg" alt="alayne-s picture">
+              <h4>Alayne-s</h4>
+            </div>
+            <div class="connections_names">
+              <img src="images/arry-s.jpg" alt="arry-s picture">
+              <h4>Arry-s</h4>
+            </div>
+          </div>
+          <div class="view_more">
+            <a href="">View More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
